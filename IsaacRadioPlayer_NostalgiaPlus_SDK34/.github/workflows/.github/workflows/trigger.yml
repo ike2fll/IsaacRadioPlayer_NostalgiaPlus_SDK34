@@ -1,0 +1,13 @@
+name: Trigger Test
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test echo
+        run: echo "It works!"
